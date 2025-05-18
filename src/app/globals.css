@@ -1,26 +1,126 @@
 @import "tailwindcss";
+@import "@fontsource/manrope"; /* Default 400 weight */
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
-body {
+/* body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Manrope";
+}
+
+@layer utilities {
+  @media (min-width: 640px) {
+    .px-laptop {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    .py-laptop {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+
+  @media (min-width: 480px) {
+    .px-tablet {
+      padding-left: 56px;
+      padding-right: 56px;
+    }
+    .py-tablet {
+      padding-top: 56px;
+      padding-bottom: 56px;
+    }
+  }
+  .px-mobile {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .py-mobile {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+} */
+
+@layer utilities {
+  .responsive-x-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .responsive-y-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: 640px) {
+    .responsive-x-padding {
+      padding-left: 56px;
+      padding-right: 56px;
+    }
+    .responsive-y-padding {
+      padding-top: 56px;
+      padding-bottom: 56px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .responsive-x-padding {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    .responsive-y-padding {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+}
+
+@layer utilities {
+  .responsive-title {
+    font-size: 28px;
+  }
+
+  @media (min-width: 640px) {
+    .responsive-title {
+      font-size: 28px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .responsive-title {
+      font-size: 50px;
+    }
+  }
+
+  .responsive-description {
+    font-size: 12px;
+  }
+
+  @media (min-width: 640px) {
+    .responsive-description {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .responsive-description {
+      font-size: 18px;
+    }
+  }
 }
