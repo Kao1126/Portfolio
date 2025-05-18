@@ -1,3 +1,5 @@
+import { Button } from "./ui/button";
+
 export default function UseCaseContainer({
   imgSrc,
   title,
@@ -10,8 +12,8 @@ export default function UseCaseContainer({
   linkSrc: string;
 }) {
   return (
-    <section className="bg-white flex h-fit w-full flex-col gap-8 rounded-2xl p-8">
-      <img src={imgSrc} className="rounded-2xl"></img>
+    <section className="bg-white flex min-h-fit h-full w-full flex-col gap-8 rounded-2xl p-8">
+      <img src={imgSrc} className="rounded-2xl h-96" />
 
       <div className="flex flex-col gap-4">
         <h3 className="text-[20px] sm:text-[24px] lg:text-[30px]">{title}</h3>
@@ -19,6 +21,7 @@ export default function UseCaseContainer({
           {description}
         </p>
       </div>
+      <Button> Read more</Button>
     </section>
   );
 }
