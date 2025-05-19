@@ -35,19 +35,21 @@ export default function Home() {
           </div>
 
           {/* Use case part */}
-          <div className="flex gap-12 w-full flex-col sm:flex-row">
+          <div className="flex gap-12 w-full flex-col md:flex-row">
             <UseCaseContainer
-              imgSrc="./example.png"
+              imgSrc="./ai-document-portal/ai-document-portal-mockup.png"
               title="AI Document Portal"
-              description="This project streamlines the insurance claims process by automating client document submission and consultant task management. The solution reduces manual work, improves accuracy, and shortens processing time using scalable, efficient UI design."
-              linkSrc="123"
+              description="This project streamlines the insurance claims process by automating client document submission and consultant task management."
+              linkSrc="/ai-document-portal"
+              roles={["UX/UI Designer", "Software Engineer"]}
             />
-            <UseCaseContainer
+            {/* <UseCaseContainer
               imgSrc="./example.png"
               title="Tasks Portal"
-              description="This proposal addresses inefficiencies in the insurance payment task management system, which currently relies on outdated tools like RPG and Google Sheets. This solution improves consultant efficiency, reduce leader workload, and minimize human errors."
-              linkSrc="123"
-            />
+              description="This proposal addresses inefficiencies in the insurance payment task management system, which currently relies on outdated tools like RPG and Google Sheets."
+              linkSrc="/tasks-portal"
+              roles={["UX/UI Designer", "Software Engineer"]}
+            /> */}
           </div>
         </section>
       </section>
