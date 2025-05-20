@@ -9,9 +9,15 @@ export default function Header() {
           <li>
             <a href="./">About</a>
           </li>
-          {/* <li>
-            <a href="#contact">Resume</a>
-          </li> */}
+          <li>
+            <a
+              href="/Wei-Cheng-Resume-Design-Engineer.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
       </div>
     </header>

@@ -43,13 +43,13 @@ export default function Home() {
               linkSrc="/ai-document-portal"
               roles={["UX/UI Designer", "Software Engineer"]}
             />
-            {/* <UseCaseContainer
-              imgSrc="./example.png"
+            <UseCaseContainer
+              imgSrc="./tasks-portal/tasks-portal-mockup.png"
               title="Tasks Portal"
               description="This proposal addresses inefficiencies in the insurance payment task management system, which currently relies on outdated tools like RPG and Google Sheets."
               linkSrc="/tasks-portal"
               roles={["UX/UI Designer", "Software Engineer"]}
-            /> */}
+            />
           </div>
         </section>
       </section>

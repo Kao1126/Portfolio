@@ -11,7 +11,7 @@ export default function AIDocumentPortal() {
         description="Designed and developed the technical solution to automte the cliam
         process."
         role="UI/UX designer, Software developer"
-        responsibility="End-to-end UI/UX design and software development"
+        responsibility="UI/UX design and software development"
         company="Auto & General (Budget Direct)"
       />
 
