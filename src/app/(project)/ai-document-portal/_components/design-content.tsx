@@ -164,24 +164,28 @@ export default function DesignContent() {
             the interaction between the client-facing chatbot and the
             consultant-facing portal.
           </p>
+
+          <div className="flex flex-col gap-2 h-fit section-responsive-description text-center items-center justify-center italics ">
+            <img
+              src={"./ai-document-portal/low-fi.png"}
+              className="rounded-2xl h-auto object-cover w-full sm:w-1/2 lg:w-1/2"
+            />
+            <p className="italic text-gray-500">
+              <strong>{"Low-fidelity Prototype"}</strong>: The prototype
+              demonstrates the interaction between the client-facing chatbot and
+              the consultant-facing portal.
+            </p>
+          </div>
           <p className="section-responsive-description ">
             <strong>High-fidelity Prototype</strong> : The prototype
             demonstrates the details of the consultant-facing portal, including
             the task and subtask components.
           </p>
-          <div className="flex flex-col sm:flex-row  gap-10 h-fit justify-start items-center ">
-            <TitleImageBlock
-              title="Low-fidelity Prototype"
-              description="The prototype demonstrates the interaction between the client-facing chatbot and the consultant-facing portal."
-              imgSrc="./ai-document-portal/low-fi.png"
-            />
-
-            <TitleImageBlock
-              title="High-fidelity Prototype"
-              description="The prototype demonstrates the interaction between the client-facing chatbot and the consultant-facing portal."
-              imgSrc="./ai-document-portal/high-fi.png"
-            />
-          </div>
+          <TitleImageBlock
+            title="High-fidelity Prototype"
+            description="The prototype demonstrates the interaction between the client-facing chatbot and the consultant-facing portal."
+            imgSrc="./ai-document-portal/high-fi.png"
+          />
         </div>
         <div></div>
       </section>
