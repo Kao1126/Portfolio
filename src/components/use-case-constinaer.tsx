@@ -22,7 +22,7 @@ export default function UseCaseContainer({
   };
   return (
     <section className="bg-white flex min-h-fit h-full w-full sm:w-1/2 flex-col gap-8 rounded-2xl p-8">
-      <img src={imgSrc} className="rounded-2xl h-96 " />
+      <img src={imgSrc} className="rounded-2xl h-auto md:h-96" />
 
       <div className="flex flex-col gap-4">
         <h3 className="section-responsive-title">{title}</h3>
