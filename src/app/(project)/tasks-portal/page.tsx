@@ -33,12 +33,8 @@ export default function AIDocumentPortal() {
           animate={isInView ? "visible" : "hidden"}
         >
           <TabsList className="grid w-fit grid-cols-2 gap-4">
-            <motion.div variants={fadeUpVariants} transition={{ delay: 0.1 }}>
-              <TabsTrigger value="design">Design</TabsTrigger>
-            </motion.div>
-            <motion.div variants={fadeUpVariants} transition={{ delay: 0.2 }}>
-              <TabsTrigger value="engineer">Engineer</TabsTrigger>
-            </motion.div>
+            <TabsTrigger value="design">Design</TabsTrigger>
+            <TabsTrigger value="engineer">Engineer</TabsTrigger>
           </TabsList>
         </motion.div>
 
