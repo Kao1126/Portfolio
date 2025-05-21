@@ -28,9 +28,9 @@ export default function EngineerContent() {
           </h2>
           <p className="section-responsive-description ">
             I am responsible for building both the backend and the frontend of
-            the application. In Next.js, I can use **API routes** in
-            <strong>pages/api/</strong> to create backend functions directly and
-            utilize Prisma to read and update data through the database.
+            the application. In Next.js, I can use <strong>API routes</strong>{" "}
+            to create backend functions directly and utilize Prisma to read and
+            update data through the database.
           </p>
 
           <h2 className="section-responsive-subtitle ">
