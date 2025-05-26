@@ -17,6 +17,9 @@ importers:
       '@radix-ui/react-tabs':
         specifier: ^1.1.11
         version: 1.1.11(@types/react-dom@19.1.5(@types/react@19.1.4))(@types/react@19.1.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@tabler/icons-react':
+        specifier: ^3.33.0
+        version: 3.33.0(react@19.1.0)
       '@vercel/analytics':
         specifier: ^1.5.0
         version: 1.5.0(next@15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
@@ -35,6 +38,9 @@ importers:
       lucide-react:
         specifier: ^0.511.0
         version: 0.511.0(react@19.1.0)
+      motion:
+        specifier: ^12.12.2
+        version: 12.12.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       next:
         specifier: 15.3.2
         version: 15.3.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -433,6 +439,14 @@ packages:
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
 
+  '@tabler/icons-react@3.33.0':
+    resolution: {integrity: sha512-ay+HDecCjmFl25Lg14hcl59ffSjnOcgfrlV14shu8Qjbz+Xh4LRus93DuoyLQte8YSxE7Pe5gnEz6OF0GtwNtw==}
+    peerDependencies:
+      react: '>= 16'
+
+  '@tabler/icons@3.33.0':
+    resolution: {integrity: sha512-NZeFfzcYe7xcBHR3zKoCSrw/cFWvfj6LjenPQ48yVMTGdX854HH9nH44ZfMH8rrDzHBllfjwl4CIX6Vh2tyN0Q==}
+
   '@tailwindcss/node@4.1.7':
     resolution: {integrity: sha512-9rsOpdY9idRI2NH6CL4wORFY0+Q6fnx9XP9Ju+iq/0wJwGD5IByIgFmwVbyy4ymuyprj8Qh4ErxMKTUL4uNh3g==}
 
@@ -640,6 +654,20 @@ packages:
       react-dom:
         optional: true
 
+  framer-motion@12.12.2:
+    resolution: {integrity: sha512-qCszZCiGWkilL40E3VuhIJJC/CS3SIBl2IHyGK8FU30nOUhTmhBNWPrNFyozAWH/bXxwzi19vJHIGVdALF0LCg==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
+
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
@@ -743,6 +771,20 @@ packages:
 
   motion-utils@12.12.1:
     resolution: {integrity: sha512-f9qiqUHm7hWSLlNW8gS9pisnsN7CRFRD58vNjptKdsqFLpkVnX00TNeD6Q0d27V9KzT7ySFyK1TZ/DShfVOv6w==}
+
+  motion@12.12.2:
+    resolution: {integrity: sha512-ZMvJXkm8QnEYH8NsKGNGMkROjyMtouc7FxTB7FVXW5KQk+ZhunEkh0FWdUKT9kia8dGL0o6YU/RmrFxsI5Plgw==}
+    peerDependencies:
+      '@emotion/is-prop-valid': '*'
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@emotion/is-prop-valid':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
 
   nanoid@3.3.11:
     resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
@@ -1149,6 +1191,13 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
+  '@tabler/icons-react@3.33.0(react@19.1.0)':
+    dependencies:
+      '@tabler/icons': 3.33.0
+      react: 19.1.0
+
+  '@tabler/icons@3.33.0': {}
+
   '@tailwindcss/node@4.1.7':
     dependencies:
       '@ampproject/remapping': 2.3.0
@@ -1315,6 +1364,15 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
 
+  framer-motion@12.12.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      motion-dom: 12.12.1
+      motion-utils: 12.12.1
+      tslib: 2.8.1
+    optionalDependencies:
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+
   graceful-fs@4.2.11: {}
 
   is-arrayish@0.3.2:
@@ -1390,6 +1448,14 @@ snapshots:
       motion-utils: 12.12.1
 
   motion-utils@12.12.1: {}
+
+  motion@12.12.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      framer-motion: 12.12.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      tslib: 2.8.1
+    optionalDependencies:
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
 
   nanoid@3.3.11: {}
 

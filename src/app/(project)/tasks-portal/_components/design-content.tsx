@@ -10,7 +10,7 @@ export default function DesignContent() {
       <TitleBulletPointBlock
         title="Summary"
         points={[
-          "Intuitive interface that makes it easy for consultants to access information.",
+          "Intuitive interface that makes it easy for consultants to access information to fasten the decision making process.",
           "Streamline task allocation to eliminate manual effort.",
           "Consultant management page to manage consultant's skills and capacity.",
         ]}
@@ -18,7 +18,7 @@ export default function DesignContent() {
       />
       <TitleDescriptionBlock
         title="Background"
-        description="The payment process in the insurance industry involves multiple steps, requiring consultants to handle more than five tasks for a single payment. However, the current task management system, which relies on the RPG system and Google Sheets, is inefficient for navigating task information and lacks the necessary functionality for leaders to manage a large volume of tasks. Therefore, we aim to design and deliver software solutions to address these challenges."
+        description="The payment process in the insurance industry involves multiple steps, requiring consultants to handle more than five tasks for a single payment. However, the current task management system, which relies on the RPG system and Google Sheets, is inefficient for navigating task information and lacks the necessary functionality for leaders to manage a large volume of tasks. Therefore, we aim to design and deliver software solutions to address these challenges and provide a solution to tackle the overloaded task information, such as a more systemic categorization feature."
       />
 
       <TitleDescriptionBlock
