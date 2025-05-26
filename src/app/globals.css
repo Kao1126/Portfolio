@@ -79,8 +79,8 @@
 
   @media (min-width: 1024px) {
     .responsive-x-padding {
-      padding-left: 120px;
-      padding-right: 120px;
+      padding-left: 140px;
+      padding-right: 140px;
     }
     .responsive-y-padding {
       padding-top: 120px;

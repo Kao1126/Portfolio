@@ -1,7 +1,7 @@
 "use client";
 
 import { Linkedin } from "lucide-react";
-import UseCaseContainer from "@/components/use-case-constinaer";
+import UseCaseContainer from "@/components/use-case-container";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { fadeUpVariants } from "@/lib/constant";
@@ -30,11 +30,11 @@ export default function Home() {
             variants={fadeUpVariants}
           />
           <motion.h1
-            className="text-[32px] sm:text-[36px] lg:text-[55px] font-normal text-center sm:text-left"
+            className="text-[24px] sm:text-[28px] lg:text-[40px] font-normal text-center sm:text-left"
             variants={fadeUpVariants}
             transition={{ delay: 0.1 }}
           >
-            I'm Kevin Kao, a UX/UI designer and software engineer. I love
+            I'm Kevin Kao, a UI/UX designer and software engineer. I love
             turning ideas into real products.
           </motion.h1>
           <motion.a
@@ -69,14 +69,14 @@ export default function Home() {
               title="AI Document Portal"
               description="This project streamlines the insurance claims process by automating client document submission and consultant task management."
               linkSrc="/ai-document-portal"
-              roles={["UX/UI Designer", "Software Engineer"]}
+              roles={["UI/UX Designer", "Software Engineer"]}
             />
             <UseCaseContainer
               imgSrc="./tasks-portal/tasks-portal-mockup.png"
               title="Tasks Portal"
               description="This proposal addresses inefficiencies in the insurance payment task management system, which currently relies on outdated tools like RPG and Google Sheets."
               linkSrc="/tasks-portal"
-              roles={["UX/UI Designer", "Software Engineer"]}
+              roles={["UI/UX Designer", "Software Engineer"]}
             />
           </div>
         </motion.section>
